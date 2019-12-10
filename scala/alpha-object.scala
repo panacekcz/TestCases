@@ -1,0 +1,1 @@
+@scala.annotation.alpha("A") object B
