@@ -1,7 +1,6 @@
 class Z{
-	trait T
-	class C extends T
-	def m(x: T = new C) = 1
+	class C
+	def m(x: C = new C) = 1
 }
 
 object O{
