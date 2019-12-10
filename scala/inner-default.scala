@@ -3,11 +3,12 @@ class Z{
 	class C extends T
 	def m(x: T = new C) = 1
 }
+
 object O{
 	def main(args: Array[String]): Unit = {
-		val a = new Z
-		a.m() // OK
-		(new Z).m() // Type mismatch
+		val a = new Z; a.m(); // OK
+		({();new Z}).m(); // OK
+		(new Z).m(); // Type mismatch
 	}
 }
 
