@@ -12,3 +12,5 @@ object O{
 }
 
 // Expect to compile (does in scala 2)
+// Seems to have problem when there is no temporary variable created for the lhs of the call
+// As long as Z contains any vals, vars or objects, a temporary is created and compiles OK
