@@ -4,6 +4,7 @@ object O{
   def main(x: Array[String]): Unit = {
     val li = List(1)
     val ls = List("A")
-    m(z(li: _*)(ls: _*)(1) : _*)
+    val lru = z(li: _*)(ls: _*)
+    m(lru(0): _*)
   }
 }
